@@ -25,7 +25,11 @@
 <body>
     <div class="header">
         <div class="container">
+            
             <a href="index.html" class="navbar-brand scroll-top">NoName Bakery</a>
+            
+            
+            
             <nav class="navbar navbar-inverse" role="navigation">
                 <div class="navbar-header">
                     <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
@@ -155,116 +159,155 @@
                         <h2>立刻線上訂購</h2>
                     </div>
                 </div>
-                <div class="col-md-4 col-md-offset-2 col-sm-12 d-none d-sm-block d-md-none">
-                    <div class="left-image">
-                        <img src="img/book_left_image.jpg" alt="">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-3">
+                    <div class="primary-button" data-toggle="modal" data-target="#exampleModal">
+                        <a href="#" class="scroll-link" data-id="book-table">面交取貨</a>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="right-info">
-                        <h4>訂購表單</h4>
-                        
-                        <form id="contactform" action="contactform.php" method="post">
-                        <!-- <form id="contactform" action="contactform.php" method="post" class="form contactForm"> -->
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" name="name" class="form-control" id="name" placeholder="姓名:" data-rule="required"
-                                          data-msg="請輸入姓名" />
-                                        <div class="validation"></div>
-                                    </div>
-                                    <!-- <fieldset>
-                                        <select required name='day' onchange='this.form.()'>
-                                            <option value="">Select day</option>
-                                            <option value="Monday">Monday</option>
-                                            <option value="Tuesday">Tuesday</option>
-                                            <option value="Wednesday">Wednesday</option>
-                                            <option value="Thursday">Thursday</option>
-                                            <option value="Friday">Friday</option>
-                                            <option value="Saturday">Saturday</option>
-                                            <option value="Sunday">Sunday</option>
-                                        </select>
-                                    </fieldset> -->
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" name="phone" class="form-control" id="phone" placeholder="聯絡電話:" data-rule="required"
-                                          data-msg="Please enter at least 8 chars" />
-                                        <div class="validation"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" name="email" id="email" placeholder="電子信箱:" 
-                                        data-rule="email"  data-msg="Please enter a valid email" />
-                                        <div class="validation"></div>
-                                    </div>
-                                    <!-- <fieldset>
-                                        <select required name='hour' onchange='this.form.()'>
-                                            <option value="">Select hour</option>
-                                            <option value="10-00">10:00</option>
-                                            <option value="12-00">12:00</option>
-                                            <option value="14-00">14:00</option>
-                                            <option value="16-00">16:00</option>
-                                            <option value="18-00">18:00</option>
-                                            <option value="20-00">20:00</option>
-                                            <option value="22-00">22:00</option>
-                                        </select>
-                                    </fieldset> -->
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="volume" id="volume" placeholder="訂購數量:" data-rule="required"/>
-                                        <div class="validation"></div>
-                                    </div>
-
-                                    <!-- <fieldset>
-                                        <input name="name" type="name" class="form-control" id="name" placeholder="Full name" required="">
-                                    </fieldset>  -->
-                                </div>
-
-                                <div class="col-md-12">
-                                    <p>匯款資訊： 中國信託 822 <br> 130540476886</p>
-
-                                </div>
-                                
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="bank" id="bank" placeholder="匯款後五碼:" data-rule="required" />
-                                        <div class="validation"></div>
-                                    </div>
-                                    <!-- <fieldset>
-                                        <select required class="person" name='persons' onchange='this.form.()'>
-                                            <option value="">How many persons?</option>
-                                            <option value="1-Person">1 Person</option>
-                                            <option value="2-Persons">2 Persons</option>
-                                            <option value="3-Persons">3 Persons</option>
-                                            <option value="4-Persons">4 Persons</option>
-                                            <option value="5-Persons">5 Persons</option>
-                                            <option value="6-Persons">6 Persons</option>
-                                        </select>
-                                    </fieldset> -->
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <textarea id="message" class="form-control" name="message" rows="2"  data-msg="Please write something for us"
-                                          placeholder="備註"></textarea>
-                                        <div class="validation"></div>
-                                      </div>
-                                </div>
-                                <div class="text-center">
-                                    <input id="submit" type="submit" name="submit" class="mx-auto btn btn-success submit" value="Send" />
-                                    <!-- <button id="submit" type="submit" class="btn btn-primary">Send</button> -->
-                                </div>
-                            </div>
-                        </form>
+                <div class="col-md-3">
+                    <div class="primary-button" data-toggle="modal" data-target="#exampleModal">
+                        <a href="#" class="scroll-link" data-id="book-table">宅配訂購</a>
                     </div>
+                </div>
+                <div class="col-md-3">
                 </div>
                 
+                
+                
             </div>
+            
         </div>
     </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="exampleModalLabel">訂購表單</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <!-- <div class="col-md-4 col-md-offset-2 col-sm-12 d-none d-sm-block d-md-none">
+                        <div class="left-image">
+                            <img src="img/book_left_image.jpg" alt="">
+                        </div>
+                    </div> -->
+                    <div class="col-md-12 col-sm-12">
+                        <div class="right-info">
+                            <!-- <h4>訂購表單</h4> -->
+
+                            <form id="contactform" action="contactform.php" method="post">
+                            <!-- <form id="contactform" action="contactform.php" method="post" class="form contactForm"> -->
+                            
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" name="name" class="form-control" id="name" placeholder="姓名:" data-rule="required"
+                                              data-msg="請輸入姓名" />
+                                            <div class="validation"></div>
+                                        </div>
+                                        <!-- <fieldset>
+                                            <select required name='day' onchange='this.form.()'>
+                                                <option value="">Select day</option>
+                                                <option value="Monday">Monday</option>
+                                                <option value="Tuesday">Tuesday</option>
+                                                <option value="Wednesday">Wednesday</option>
+                                                <option value="Thursday">Thursday</option>
+                                                <option value="Friday">Friday</option>
+                                                <option value="Saturday">Saturday</option>
+                                                <option value="Sunday">Sunday</option>
+                                            </select>
+                                        </fieldset> -->
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" name="phone" class="form-control" id="phone" placeholder="聯絡電話:" data-rule="required"
+                                              data-msg="Please enter at least 8 chars" />
+                                            <div class="validation"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="email" id="email" placeholder="電子信箱:" 
+                                            data-rule="email"  data-msg="Please enter a valid email" />
+                                            <div class="validation"></div>
+                                        </div>
+                                        <!-- <fieldset>
+                                            <select required name='hour' onchange='this.form.()'>
+                                                <option value="">Select hour</option>
+                                                <option value="10-00">10:00</option>
+                                                <option value="12-00">12:00</option>
+                                                <option value="14-00">14:00</option>
+                                                <option value="16-00">16:00</option>
+                                                <option value="18-00">18:00</option>
+                                                <option value="20-00">20:00</option>
+                                                <option value="22-00">22:00</option>
+                                            </select>
+                                        </fieldset> -->
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="volume" id="volume" placeholder="訂購數量:" data-rule="required"/>
+                                            <div class="validation"></div>
+                                        </div>
+                                    
+                                        <!-- <fieldset>
+                                            <input name="name" type="name" class="form-control" id="name" placeholder="Full name" required="">
+                                        </fieldset>  -->
+                                    </div>
+                                
+                                    <div class="col-md-12">
+                                        <p>匯款資訊： 中國信託 822 <br> 130540476886</p>
+                                    
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="bank" id="bank" placeholder="匯款後五碼:" data-rule="required" />
+                                            <div class="validation"></div>
+                                        </div>
+                                        <!-- <fieldset>
+                                            <select required class="person" name='persons' onchange='this.form.()'>
+                                                <option value="">How many persons?</option>
+                                                <option value="1-Person">1 Person</option>
+                                                <option value="2-Persons">2 Persons</option>
+                                                <option value="3-Persons">3 Persons</option>
+                                                <option value="4-Persons">4 Persons</option>
+                                                <option value="5-Persons">5 Persons</option>
+                                                <option value="6-Persons">6 Persons</option>
+                                            </select>
+                                        </fieldset> -->
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea id="message" class="form-control" name="message" rows="2"  data-msg="Please write something for us"
+                                              placeholder="備註"></textarea>
+                                            <div class="validation"></div>
+                                          </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <input id="submit" type="submit" name="submit" class="mx-auto btn btn-success submit" value="Send" />
+                                        <!-- <button id="submit" type="submit" class="btn btn-primary">Send</button> -->
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
 
 
 
@@ -438,11 +481,11 @@
                 </div>
                 <div class="col-md-4">
                     <ul class="social-icons">
-                        <li><a rel="nofollow" href="https://fb.com/templatemo"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a rel="nofollow" href="https://www.facebook.com/No-Name-Bakery%E6%9C%AA%E5%91%BD%E5%90%8D%E7%94%9C%E9%BB%9E-100159708813146"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://instagram.com/nonamebakery2020?igshid=1tw57rsw3i536"><i class="fa fa-instagram"></i></a></li>
+                        <!-- <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
+                        <!-- <li><a href="#"><i class="fa fa-rss"></i></a></li> -->
+                        <!-- <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
                     </ul>
                 </div>
                 <div class="col-md-4">
