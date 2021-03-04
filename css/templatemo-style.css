@@ -383,6 +383,11 @@ section#book-table .left-image img {
 	color: #9a9a9a;
 }
 
+.right-info input .submit{
+	color: #ffffff;
+
+}
+
 .right-info button {
 	width: 100%;
 	display: inline-block;
